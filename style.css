@@ -1,0 +1,95 @@
+.container{
+    max-width: 25rem;
+    margin:10vh auto 0 auto;
+}
+#display{
+    text-align: right;
+    height: 4.375rem;
+    line-height: 4.375rem;
+    padding: 1rem .5rem;
+    font-size: 1.5625rem;
+    border-top:0.3rem solid gray;
+    border-left:0.3rem solid gray;
+    border-right:0.3rem solid gray;
+    border-radius: .2rem;
+    border-bottom: 0.4rem solid gray;
+
+}
+.buttons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom:0.3rem solid gray;
+    border-left: 0.3rem solid grey;
+    border-right: 0.3rem solid gray;
+    background-color:purple;
+    grid-gap: .5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+.buttons>div{
+    border-top: .1rem solid grey;
+    border-right: .1rem solid grey;
+    border-radius: 1.2rem;
+    background-color: aliceblue;
+}
+.button{
+    border: .08rem solid grey;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(118, 61, 251);
+    color: rgb(230, 230, 230);
+}
+.button:hover{
+    background-color: black;
+    color: azure;
+    transition: ease-in-out;
+    border:.1rem solid red;
+}
+#equal:hover{
+    background-color: wheat;
+    color:black;
+    border:.1rem solid black;
+}
+
+@media screen and (max-width:438px){
+    html{
+        font-size: 80%;
+        size: 94%;
+    }
+    .container{
+        margin-top:8rem;
+    }
+}
+@media screen and (max-width:354px){
+    html{
+        font-size: 75%;
+        size: 80%;
+    }
+    .container{
+        margin-top: 8rem;
+    }
+}
+@media screen and (max-width:312px){
+    html{
+        font-size: 65%;
+        size: 65%;
+    }
+    .container{
+        margin-top: 10rem;
+    }
+}
+@media screen and (max-width:278px){
+    html{
+        font-size: 60%;
+        size: 60%;
+    }
+    .container{
+        margin-top: 12rem;
+    }
+}
